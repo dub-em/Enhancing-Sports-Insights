@@ -1,0 +1,122 @@
+Second Milestone
+-Deployment and UI Design
+-Model Development
+
+Relevant Links: https://peter.sh/experiments/chromium-command-line-switches/
+		https://www.python.org/downloads/release/python-3100/
+		https://www.filepuma.com/download/google_chrome_64bit_116.0.5845.97-36115/
+
+Workflow
+-National games, how this can be accounted for?
+
+Client Desired Pattern
+Analysis
+
+Historic match score & Referee - Done
+-Repeated sequences
+	-Even similar patterns
+	-Limited to the last six game
+		Head2Head, Home and Away
+	-Expected pattern is limited to 3 games (after third occurence, pattern is expected to change)
+		-Client should be notifed when the pattern is at the second stage
+		-Check if total score is the same regardless of which team plays home or away
+		-Check if total score is the same regarding which team playes home or away (filter basically)
+		-Check if there is a repitition or other pattern like (score increment) for home team, also for away team.	
+		-Check for number in between if both number are not consecutive.
+
+	-Filter for home only played
+	-Filter for away only played
+	-Allign the score of team under consideration regardless of home or away and check
+	-Don't filter or allign at all, and check by role
+	
+What happened during the games -Done
+-Which minute of scoring occurs the most
+	-Check exact minute
+	-Also check by ranges
+		-injury time
+		-first ten minutes
+		-last ten minutes
+		-first and second half
+-Compare between the two teams playing against each other
+	-Who scores more with respect to first goal or the last
+-Check if a team is always winning even though the opponent scored first.
+
+
+
+Hosted UI
+Link: https://ml-prediction-user-interface-97259f546bb4.herokuapp.com/
+      https://sport-insight-user-interface-d5314cce7a91.herokuapp.com/
+
+
+Final Steps
+-Investigate why there were no extractions for the other leagues.
+-Try using round for extraction instead
+
+
+Project Expansions
+-Historic Analysis
+	Milestone
+	-Database Creation and Historic Data Extraction (Allocation: EUR550, Date: 6th - 17th) -Done
+	-Data Wrangling and Preparation, Outcome Prediction (Allocation: EUR550, Date: 18th - 28th) -Done
+	-Analysis of Prediction, Report of Analysis (Allocation: EUR500, Date: 29th - 10th) -Report Writing Ongoing
+
+-Historic Analysis to see the performance of the Predictions
+	Milestone
+	-Database to hold large amount of data as each league will be analysed by their participating clubs
+		-Each club will have it's own historic data extracted from the league's historic data
+	-Historic matches will be extracted
+		-Each club in each historic match will be checked against its own history for home or away history
+		-Both clubs in the match will be used to filter the historic match for head-to-head
+	-Prediction will be made on all match after the data transformation is done.
+	-Analysis on this Predcition will be done, by entire dataset, by league, and possibly by season 
+
+-Rule Check -Done
+	Milestone
+	-Defining Rules and System Integration (Allocation: EUR250, Date: 6th - 14th) -Done
+	-Deployment (Allocation: EUR250, Date: 15th - 23rd) -Done
+		-Add the rules check to the Analysis script
+		-This will lead to combining the Team and Ref prediction at the analysis stage, to create a rules_check table which is a combination of both -Done, but put on hold dur to client's request.
+		-When extracting data from database (rules check table) to display on the UI, filter by the matches that passed the rule from analysis.
+
+-Real Check 
+	-All predictions from client will be checked against the already existing prediction from the system
+		-The overlapping predictions will be check and confirmed if the system supports it, and by how much percentage probability.
+
+Bonus Dependent on timely execution: EUR200
+
+
+-Real-time Crosschecking Platform Prediction
+	-All already played matches will be extracted and the actual score will be checked against the system's prediction
+		-Whichever system prediction happens to be right, the source of the prediction will be documented
+	-Over time, Analysis will be conducted to see which sources leads to the most successful predictions.
+
+
+ToDo
+-Create Report for Client on Conducted Analysis
+	-What was the overall accuracy
+	-What was the accuracy by leagues
+		-Which leagues had the top 5 accurate prediction
+	-What was the accuracy by seasons
+	-What was the accuracy by seasons and leagues
+		-Given the top 5 leagues in each season, which leagues were reoccuring
+	-Which prediction sources occured the most in accurate predictions
+	-which prediction sources were occured most (top 5) in accurate predictions for each league.
+	-Which predictions sources occured the most (top 5) in accurate predictions for each season
+	-Which teams had the most occurence in accurate predictions
+	-Which teams had the highest accuracy from all their occurences
+	-Which teams amongst the highest occuring in accurate predicitons had the highest accuracy.
+	-Which teams had the most occurence (top 5) in accurate predicitons by season
+	-Which team has the highest accuracy(top 5) from all their occurences by season
+	-Is there any trend pattern by weekly accuracy, by season for each league
+		-Plot six season leagues in one cahrt each
+	-Which leagues had the highest upward gradient in weekly accuracy trend.
+
+-Proposal
+	-Parts of the report like league and team accuracies and prediction types can be incorporated into the User Interface
+
+
+-Arrange the Enhance Sport Repo
+	-Add all of Michael Georges Code to sub-branch_1
+	-Add all of my codes to sub_branch_2
+	-Delete all branches
+	-Push to main branch

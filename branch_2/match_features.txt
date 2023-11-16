@@ -1,0 +1,76 @@
+-0. UEFA Champions League
+-1. English Premier League (EPL)
+-2. La Liga (Spain)
+-3. Bundesliga (Germany)
+-4. Serie A (Italy)
+-5. Ligue 1 (France)
+-6. Primeira Liga (Portugal)
+-7. Russian Premier League (Russia)
+-8. Eredivisie (Netherlands)
+-9. Superleague Greece (Greece) 
+-10. Super Lig (Turkey)
+-11. Danish Superliga (Denmark)
+-12. Major League Soccer (United States and Canada)
+-13. Campeonato Brasileiro Serie A (Brazil)
+-14. Argentina Primera Division (Argentina)
+
+Prematch Statistics
+-01. Winning Streak 
+-02. Losing Streak 
+-03. Winning Streak Current 
+-04. Losing Streak Current 
+-05. Wins 
+-06. Loses 
+-07. Draws 
+-08. Games Played 
+-09. Points 
+-10. Goal Difference 
+-11. Home Performance
+-12. Away Performance
+-13. Average Goals scored	
+-14. Average Goals conceded
+-15. Average Shots on Goal 
+-16. Average Shots off Goal 
+-17. Average Shots 
+-18. Average Possession Percentage
+-19. Average Passing Accuracy
+-20. Average Passes Completed
+-21. Average Tackles Won	
+-22. Average Corners 
+-23. Average Fouls Committed 
+-24. Average Fouls Suffered
+-25. Average Yellow Cards 
+-26. Average Red Cards
+-27. Injury List Length 
+-28. Suspensions List Length
+-29. Weather Conditions	
+-30. Player return from injury/fatigue
+-31. Set Pieces Team scoring proficiency
+-32. First Half Perf
+-33. Second-Half Perf
+-31. Odds and Betting Trends
+-32. Goals scored 	
+-33. Goals conceded 
+-34. Shots on Goal
+-35. Shots off Goal 
+-36. Shots 
+-37. Passes Completed
+-38. Tackles Won	
+-39. Corners
+-40. Fouls Committed 
+-41. Fouls Suffered 
+-42. Yellow Cards 
+-43. Red Cards  
+
+Match Statistics
+-44. Possession Percentage 
+-45. Shots on Goal 
+-46. Passing Accuracy 
+-47. Tackles Won
+-48. Corners 
+-49. Offside 
+-50. Yellow Cards
+-51. Red Cards
+-52. Passess Completed 
+-53. Interceptions
+-54. Fouls Total
