@@ -58,7 +58,10 @@ Project Expansions
 	Milestone
 	-Database Creation and Historic Data Extraction (Allocation: EUR550, Date: 6th - 17th) -Done
 	-Data Wrangling and Preparation, Outcome Prediction (Allocation: EUR550, Date: 18th - 28th) -Done
-	-Analysis of Prediction, Report of Analysis (Allocation: EUR500, Date: 29th - 10th) -Report Writing Ongoing
+	-Analysis of Prediction, Report of Analysis (Allocation: EUR500, Date: 29th - 10th) -Done
+
+	-Part 1: https://www.loom.com/share/6ab43dcccd2a42e9a93f0a0ae78e4363?sid=cc130e11-0e77-4428-acad-4ebf3c38be6b
+	-Part 2: https://www.loom.com/share/17e315f03e1a44be94a19445114f5311?sid=0724a3a8-a24c-4dd2-a5c5-aaafbee23d2e
 
 -Historic Analysis to see the performance of the Predictions
 	Milestone
@@ -92,31 +95,13 @@ Bonus Dependent on timely execution: EUR200
 
 
 ToDo
--Create Report for Client on Conducted Analysis
-	-What was the overall accuracy
-	-What was the accuracy by leagues
-		-Which leagues had the top 5 accurate prediction
-	-What was the accuracy by seasons
-	-What was the accuracy by seasons and leagues
-		-Given the top 5 leagues in each season, which leagues were reoccuring
-	-Which prediction sources occured the most in accurate predictions
-	-which prediction sources were occured most (top 5) in accurate predictions for each league.
-	-Which predictions sources occured the most (top 5) in accurate predictions for each season
-	-Which teams had the most occurence in accurate predictions
-	-Which teams had the highest accuracy from all their occurences
-	-Which teams amongst the highest occuring in accurate predicitons had the highest accuracy.
-	-Which teams had the most occurence (top 5) in accurate predicitons by season
-	-Which team has the highest accuracy(top 5) from all their occurences by season
-	-Is there any trend pattern by weekly accuracy, by season for each league
-		-Plot six season leagues in one cahrt each
-	-Which leagues had the highest upward gradient in weekly accuracy trend.
+-Explain the report in a loom video for quicker understanding by client.
+-Parts of the report like league and team accuracies and prediction types can be incorporated into the User Interface
 
--Proposal
-	-Parts of the report like league and team accuracies and prediction types can be incorporated into the User Interface
+-Check and correct the ml stats extraction script.
 
 
--Arrange the Enhance Sport Repo
-	-Add all of Michael Georges Code to sub-branch_1
-	-Add all of my codes to sub_branch_2
-	-Delete all branches
-	-Push to main branch
+-Rules Check
+-Implement a threshold relaxation in the event that number of predictions is less than 5, then threshold should be 80%
+-In addition to the email update on number of prediction, also notify the client of any match that has less than 5 predicitons
+-An added priority list that show the matches (top 5) that have the highest number of rules as true. 
