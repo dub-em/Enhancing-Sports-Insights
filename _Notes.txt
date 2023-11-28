@@ -54,54 +54,42 @@ Final Steps
 
 
 Project Expansions
--Historic Analysis
+-Historic Analysis -Done
 	Milestone
 	-Database Creation and Historic Data Extraction (Allocation: EUR550, Date: 6th - 17th) -Done
 	-Data Wrangling and Preparation, Outcome Prediction (Allocation: EUR550, Date: 18th - 28th) -Done
 	-Analysis of Prediction, Report of Analysis (Allocation: EUR500, Date: 29th - 10th) -Done
 
+	Report	
 	-Part 1: https://www.loom.com/share/6ab43dcccd2a42e9a93f0a0ae78e4363?sid=cc130e11-0e77-4428-acad-4ebf3c38be6b
 	-Part 2: https://www.loom.com/share/17e315f03e1a44be94a19445114f5311?sid=0724a3a8-a24c-4dd2-a5c5-aaafbee23d2e
-
--Historic Analysis to see the performance of the Predictions
-	Milestone
-	-Database to hold large amount of data as each league will be analysed by their participating clubs
-		-Each club will have it's own historic data extracted from the league's historic data
-	-Historic matches will be extracted
-		-Each club in each historic match will be checked against its own history for home or away history
-		-Both clubs in the match will be used to filter the historic match for head-to-head
-	-Prediction will be made on all match after the data transformation is done.
-	-Analysis on this Predcition will be done, by entire dataset, by league, and possibly by season 
 
 -Rule Check -Done
 	Milestone
 	-Defining Rules and System Integration (Allocation: EUR250, Date: 6th - 14th) -Done
 	-Deployment (Allocation: EUR250, Date: 15th - 23rd) -Done
-		-Add the rules check to the Analysis script
-		-This will lead to combining the Team and Ref prediction at the analysis stage, to create a rules_check table which is a combination of both -Done, but put on hold dur to client's request.
-		-When extracting data from database (rules check table) to display on the UI, filter by the matches that passed the rule from analysis.
 
--Real Check 
-	-All predictions from client will be checked against the already existing prediction from the system
-		-The overlapping predictions will be check and confirmed if the system supports it, and by how much percentage probability.
-
-Bonus Dependent on timely execution: EUR200
+Bonus Dependent on timely execution: EUR200 -Certain
 
 
--Real-time Crosschecking Platform Prediction
+-Real-time Check -Pending
 	-All already played matches will be extracted and the actual score will be checked against the system's prediction
 		-Whichever system prediction happens to be right, the source of the prediction will be documented
-	-Over time, Analysis will be conducted to see which sources leads to the most successful predictions.
+	-Over time, Analysis will be conducted to see which sources leads to the most successful predictions
+	
 
-
-ToDo
--Explain the report in a loom video for quicker understanding by client.
+Historic Analysis ToDo
 -Parts of the report like league and team accuracies and prediction types can be incorporated into the User Interface
-
 -Check and correct the ml stats extraction script.
 
-
--Rules Check
--Implement a threshold relaxation in the event that number of predictions is less than 5, then threshold should be 80%
+-Rules Check ToDo
+-Implement a threshold relaxation in the event that number of predictions is less than 5, then threshold should be 70% -Done
+-Correct the rules check analysis, where the count will be refreshed for every new row.
 -In addition to the email update on number of prediction, also notify the client of any match that has less than 5 predicitons
 -An added priority list that show the matches (top 5) that have the highest number of rules as true. 
+-Implement new set of rules check asked for by the client.
+
+New Project ToDo
+-Check the bet sites to see what it take to extract their odds daily
+-How matches in the bet site can be linked to the matches in the systems prediciton
+-Adding the odds to rules checked, and outputing the matches with the highest odd attached to their rule check with true value
